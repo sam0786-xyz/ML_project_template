@@ -53,7 +53,7 @@ class JSONDataIngestor(DataIngestor):
         return df
     
 class ExcelDataIngestor(DataIngestor):
-    def ingest_data(self, file_path: str) -> pd.DataFrame;
+    def ingest_data(self, file_path: str) -> pd.DataFrame:
         """Ingest data from a excel file and return a pandas DataFrame."""
         if not file_path.endswith('.xlsx'):
             raise ValueError("File must be a excel file.")
