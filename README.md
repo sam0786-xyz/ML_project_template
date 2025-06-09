@@ -83,7 +83,7 @@ ML_PROJECT_TEMPLATE/
 
 ⸻
 
-📬 ###Contact
+### 📬 Contact
 
 Feel free to reach out via GitHub Issues for feedback or collaboration.
 
