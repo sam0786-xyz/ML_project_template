@@ -1,30 +1,89 @@
-# 📁 MLOps Learning Journey
+# 🧠 ML Project Template
 
-This repository contains all the code, files, and notes related to my journey of learning **MLOps.**
+A clean and modular template for building end-to-end Machine Learning systems using MLOps best practices.
 
-I am following the **FreeCodeCamp’s End-to-End Machine Learning Project (AI & MLOps) by Ayush Singh** as my primary learning resource.
+This repository follows along with:
+- **Ayush Singh's FreeCodeCamp MLOps Series**
+- **Krish Naik's End-to-End ML System Design Tutorials**
 
-I will be updating this repository daily with everything I learn along the way.
+---
+
+## 📁 Project Structure
+
+ML_PROJECT_TEMPLATE/
+├── data/                  # Raw or processed data
+├── ml_project.egg-info/   # Package metadata
+├── src/                   # Source code
+│   ├── components/        # Core ML components
+│   │   ├── data_ingestion.py
+│   │   ├── data_transformation.py
+│   │   └── model_trainer.py
+│   ├── pipeline/          # Train & predict pipeline scripts
+│   │   ├── train_pipeline.py
+│   │   └── predict_pipeline.py
+│   ├── exception.py       # Custom exception handling
+│   ├── logger.py          # Logging utility
+│   ├── utils.py           # Utility functions
+├── venv/                  # Virtual environment
+├── .gitignore
+├── README.md
+├── requirements.txt       # Python dependencies
+└── setup.py               # Installable Python package
+
+---
+
+## ✅ Current Progress
+
+### 📦 Data Ingestion System
+
+- Implemented using **OOP design** with **Abstract Base Classes**.
+- Built a flexible factory that auto-detects file formats and loads them as `pandas.DataFrame`.
+
+#### Ingestors:
+- **`ZipDataIngestor`**: Extracts a `.zip` containing exactly one `.csv` and loads it.
+- **`JSONDataIngestor`**: Reads a JSON file and converts it into a DataFrame.
+- **`ExcelDataIngestor`**: Supports `.xlsx` files and returns a DataFrame.
+- **`DataIngestorFactory`**: Automatically selects the correct ingestor class based on file extension.
+
+---
+
+## 🚧 Upcoming Modules
+
+- 🔄 Data Transformation
+- 🤖 Model Training
+- 🧪 Evaluation
+- 🚀 CI/CD & Deployment
+
+---
+
+## 📌 How to Use
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/sameer786-xyz/ML_project_template.git
+   cd ML_project_template
+
+	2.	Install dependencies:
+
+pip install -r requirements.txt
 
 
-✅ **Current Progress**
-	•	Learned about Data Ingestion, the first step in any ML pipeline.
-	•	Built a modular and extensible Data Ingestion System using Object-Oriented Programming and Abstract Base Classes.
-	•	Implemented the following components:
+	3.	Run the training pipeline:
 
-📦 ZipDataIngestor
-	•	Extracts .csv files from a .zip archive.
-	•	Validates the presence of exactly one .csv file and converts it into a pandas DataFrame.
+python src/pipeline/train_pipeline.py
 
-🧾 JSONDataIngestor
-	•	Reads a .json file directly from the given path.
-	•	Loads the data and converts it into a pandas DataFrame.
 
-📊 ExcelDataIngestor
-	•	Handles .xlsx Excel files.
-	•	Reads and returns the data as a pandas DataFrame.
 
-🏭 DataIngestorFactory
-	•	Detects the file extension automatically.
-	•	Instantiates the appropriate ingestor class (.zip, .json, or .xlsx).
-	•	Provides a unified ingest_data() method for ingestion.
+⸻
+
+🙌 Acknowledgements
+	•	Ayush Singh – FreeCodeCamp AI/MLOps
+	•	Krish Naik – End-to-End ML Projects
+
+⸻
+
+📬 Contact
+
+Feel free to reach out via GitHub Issues for feedback or collaboration.
+
+---
