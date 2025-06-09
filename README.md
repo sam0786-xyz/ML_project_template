@@ -62,16 +62,17 @@ ML_PROJECT_TEMPLATE/
    ```bash
    git clone https://github.com/sameer786-xyz/ML_project_template.git
    cd ML_project_template
+   ```
 
-	2.	Install dependencies:
+2. Install dependencies:
+	```bash
+	pip install -r requirements.txt
+	```
 
-pip install -r requirements.txt
-
-
-	3.	Run the training pipeline:
-
-python src/pipeline/train_pipeline.py
-
+3. Run the training pipeline:
+	```bash
+	python src/pipeline/train_pipeline.py
+	```
 
 
 ⸻
@@ -82,7 +83,7 @@ python src/pipeline/train_pipeline.py
 
 ⸻
 
-📬 Contact
+📬 ###Contact
 
 Feel free to reach out via GitHub Issues for feedback or collaboration.
 
